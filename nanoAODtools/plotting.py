@@ -41,7 +41,7 @@ def plot_effs(xaxis, yaxis, error=None, path=None):
         ax.errorbar(xaxis, yaxis, yerr=error, fmt="o", capsize=2.0)
 
     # ax.set_title("Expected b-Tagging Performance Run 3".format(label), fontsize=24)
-    ax.set_xlabel("offline b-jet cut value")
+    ax.set_xlabel("offline b-jet value")
     ax.yaxis.set_ticks_position("both")
     ax.xaxis.set_ticks_position("both")
     ax.xaxis.set_minor_locator(AutoMinorLocator())
@@ -68,7 +68,7 @@ def plot_multiple_effs(xaxis, yaxes, errors=None, names=None, path=None):
             ax.errorbar(xaxis, yaxis, yerr=error, fmt="o", label=name, capsize=2.0)
 
     # ax.set_title("Expected b-Tagging Performance Run 3".format(label), fontsize=24)
-    ax.set_xlabel("offline b-jet cut value")
+    ax.set_xlabel("offline b-jet value")
     ax.yaxis.set_ticks_position("both")
     ax.xaxis.set_ticks_position("both")
     ax.xaxis.set_minor_locator(AutoMinorLocator())
